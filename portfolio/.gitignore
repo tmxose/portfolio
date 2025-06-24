@@ -1,0 +1,19 @@
+# OS별 시스템 파일 무시
+.DS_Store
+Thumbs.db
+
+# 로그 파일 무시
+*.log
+
+# 에디터별 설정 파일 무시
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# npm 관련 파일 무시 (혹시 사용 시)
+node_modules/
+
+# 빌드 결과물 무시 (향후 사용 대비)
+dist/
+build/ 

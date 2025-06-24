@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신혁주 포트폴리오</title>
+  <!-- 스타일 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 네비게이션 바 -->
+  <nav>
+    <!-- 네비게이션 메뉴 -->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills & Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 홈 섹션 -->
+  <section id="home">
+    <!-- 프로필 사진은 profile.jpg 파일을 추가해야 합니다. -->
+    <img src="profile.jpg" alt="프로필 사진" style="width:140px; border-radius:50%; margin-bottom:20px;" onerror="this.style.display='none'">
+    <h1>안녕하세요. WinForm과 ASP.NET 개발 경험이 있는 신입 개발자 신혁주입니다.</h1>
+    <div class="cta-buttons">
+      <a href="#projects">프로젝트 보기</a>
+      <!-- 이력서 PDF 파일을 추가해야 합니다. -->
+      <a href="resume.pdf" download onclick="downloadResume()">이력서 다운로드</a>
+    </div>
+  </section>
+
+  <!-- 자기소개 섹션 -->
+  <section id="about">
+    <h2>자기소개</h2>
+    <p>2024년 NMSOFT 솔루션사업부에서 WinForm 및 ASP.NET 기반의 업무관리 시스템을 개발하며 약 8개월간 실무 경험을 쌓았습니다.</p>
+    <p>현장 중심의 실용적인 개발을 중요하게 생각하며, 업무 자동화, 데이터 처리에 관심이 많습니다.</p>
+  </section>
+
+  <!-- 프로젝트 섹션 -->
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <!-- 아래 샘플 프로젝트를 참고하여 실제 프로젝트로 교체하세요. -->
+    <div class="project-card">
+      <h3>프로젝트명: N멤버쉽 메일 자동등록 기능 개발</h3>
+      <p>설명: 기존 수동 메일 등록 프로세스를 자동화하여 업무 효율을 크게 향상시켰습니다. WinForm, POP3, ASP.NET 등 다양한 기술을 활용하였습니다.</p>
+      <div class="tech">사용 기술: C#, WinForm, POP3, ASP.NET</div>
+      <!-- 실제 깃허브 링크로 교체하세요. -->
+      <a href="#" target="_blank">깃허브 링크</a>
+      <!-- 실제 스크린샷 파일로 교체하세요. -->
+      <div style="margin-top:12px;">
+        <img src="project1_sample.png" alt="프로젝트 스크린샷" style="width:100%; max-width:400px; border-radius:8px;" onerror="this.style.display='none'">
+      </div>
+    </div>
+    <!-- 추가 프로젝트는 위 형식을 복사해서 추가하세요. -->
+    <!-- 실제 프로젝트가 없으면 샘플을 삭제하거나 수정하세요. -->
+  </section>
+
+  <!-- 기술 및 자격증 섹션 -->
+  <section id="skills">
+    <h2>기술 스택</h2>
+    <ul>
+      <li>C# / WinForm / ASP.NET</li>
+      <li>SQL (SQLD 자격증 기반 쿼리 능력)</li>
+      <li>Git, GitHub 사용 경험</li>
+      <li>Visual Studio, Postman 등 기타 툴</li>
+    </ul>
+    <h2>자격증</h2>
+    <ul>
+      <li>정보처리기사 (2024.06)</li>
+      <li>MOS Master (2022.07)</li>
+      <li>SQLD (2025.06.27 예정)</li>
+    </ul>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>이름: 신혁주</li>
+      <li>이메일: <a href="mailto:shj970701@gmail.com">shj970701@gmail.com</a></li>
+      <li>깃허브: <a href="https://github.com/shj970701" target="_blank">https://github.com/shj970701</a></li>
+    </ul>
+    <!-- 이력서 PDF 파일을 추가해야 합니다. -->
+    <button class="button" onclick="downloadResume()">이력서 다운로드</button>
+    <p style="margin-top:20px;">함께 성장할 수 있는 개발팀을 찾고 있습니다. 언제든 연락 주세요.</p>
+  </section>
+
+  <!-- 스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html> 

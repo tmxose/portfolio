@@ -1,0 +1,123 @@
+/* 전체 배경 및 폰트 설정 */
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 네비게이션 바 스타일 */
+nav {
+  background: #1a2236;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #4f8cff;
+}
+
+/* 각 섹션 기본 스타일 */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px 60px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 홈 섹션 스타일 */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+#home .cta-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+#home .cta-buttons a {
+  background: #1a2236;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+#home .cta-buttons a:hover {
+  background: #4f8cff;
+}
+
+/* 프로젝트 카드 스타일 */
+.project-card {
+  background: #f7f9fc;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(30,40,60,0.07);
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.project-card h3 {
+  margin-top: 0;
+}
+.project-card .tech {
+  color: #4f8cff;
+  font-size: 0.95rem;
+}
+
+/* 버튼 스타일 */
+.button {
+  background: #1a2236;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #4f8cff;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 600px) {
+  nav ul {
+    gap: 16px;
+  }
+  section {
+    padding: 40px 8px 32px 8px;
+  }
+  #home h1 {
+    font-size: 1.5rem;
+  }
+  .project-card {
+    padding: 16px;
+  }
+} 
