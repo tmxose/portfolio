@@ -6,6 +6,10 @@
   <title>신혁주 포트폴리오</title>
   <!-- 스타일 연결 -->
   <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN 추가 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <!-- 네비게이션 바 -->
@@ -42,27 +46,62 @@
   <!-- 프로젝트 섹션 -->
   <section id="projects">
     <h2>프로젝트</h2>
-    <!-- 아래 샘플 프로젝트를 참고하여 실제 프로젝트로 교체하세요. -->
+    <!-- 1. Unity 2D 런게임 "조랭런" -->
     <div class="project-card">
-      <h3>프로젝트명: N멤버쉽 메일 자동등록 기능 개발</h3>
-      <p>설명: 기존 수동 메일 등록 프로세스를 자동화하여 업무 효율을 크게 향상시켰습니다. WinForm, POP3, ASP.NET 등 다양한 기술을 활용하였습니다.</p>
-      <div class="tech">사용 기술: C#, WinForm, POP3, ASP.NET</div>
-      <!-- 실제 깃허브 링크로 교체하세요. -->
-      <a href="#" target="_blank">깃허브 링크</a>
-      <!-- 실제 스크린샷 파일로 교체하세요. -->
+      <h3><i class="fa-solid fa-gamepad"></i> C# Unity 2D 런게임 "조랭런"</h3>
+      <p>약 3개월간 국비사업/대학 프로젝트로 진행한 2D 횡스크롤 러닝 게임입니다. 디자인은 팀원 1명이, 개발은 전담하여 구현하였고, 최종 시연 및 제출까지 완료했습니다. 수상은 없었지만 Unity와 C# 실무 경험을 쌓았습니다.</p>
+      <div class="tech">사용 기술: C#, Unity</div>
+      <a href="#" target="_blank">깃허브 링크(비공개/미등록)</a>
       <div style="margin-top:12px;">
-        <img src="project1_sample.png" alt="프로젝트 스크린샷" style="width:100%; max-width:400px; border-radius:8px;" onerror="this.style.display='none'">
+        <img src="project1_sample.png" alt="조랭런 스크린샷" style="width:100%; max-width:400px; border-radius:8px;" onerror="this.style.display='none'">
       </div>
     </div>
-    <!-- 추가 프로젝트는 위 형식을 복사해서 추가하세요. -->
-    <!-- 실제 프로젝트가 없으면 샘플을 삭제하거나 수정하세요. -->
+    <!-- 2. 영화 예매 사이트 -->
+    <div class="project-card">
+      <h3><i class="fa-solid fa-film"></i> 영화 예매 사이트</h3>
+      <p>HTML, CSS, JavaScript로 구현한 영화 예매 웹사이트입니다. 좌석 선택, 예매 내역 확인, 반응형 UI 등 실제 서비스와 유사한 기능을 구현했습니다.</p>
+      <div class="tech">사용 기술: HTML, CSS, JavaScript</div>
+      <a href="https://github.com/tmxose/webpageTask" target="_blank">깃허브 바로가기</a>
+      <div style="margin-top:12px;">
+        <img src="./img/movie_project.png" alt="영화 예매 사이트 스크린샷" style="display:block; margin:0 auto; width:auto; max-width:300px; height:180px; object-fit:contain; border-radius:8px;" onerror="this.style.display='none'">
+      </div>
+    </div>
+    <!-- 3. 냉난방 사용량 및 요금조회 + SNS 로그인 -->
+    <div class="project-card">
+      <h3><i class="fa-solid fa-temperature-high"></i> 냉난방 사용량 및 요금조회 + SNS 로그인</h3>
+      <p>공공데이터 기반으로 냉난방 사용량/요금 조회와 카카오, 네이버 등 SNS 로그인 기능을 연동한 웹 서비스입니다. 데이터 시각화와 OAuth 인증 경험을 쌓았습니다.</p>
+      <div class="tech">사용 기술: ASP.NET, C#, JavaScript, Chart.js, OAuth</div>
+      <a href="https://github.com/tmxose/EcoProject" target="_blank">깃허브 바로가기</a>
+      <!-- Swiper 슬라이드 시작 -->
+      <div class="swiper mySwiper" style="margin-top:12px; max-width:600px; height:420px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/Eco_1.png" alt="전체화면" style="width:100%; height: 100%; object-fit:cover; border-radius:8px;"></div>
+          <div class="swiper-slide"><img src="./img/Eco_2.png" alt="로그인폼" style="width:100%; height: 100%; object-fit:cover; border-radius:8px;"></div>
+          <div class="swiper-slide"><img src="./img/Eco_3.png" alt="기타화면" style="width:100%; height: 100%; object-fit:cover; border-radius:8px;"></div>
+        </div>
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- 4. 가스 공급량 수요예측 모니터링 대시보드 -->
+    <div class="project-card">
+      <h3><i class="fa-solid fa-gas-pump"></i> 가스 공급량 수요예측 모니터링 대시보드</h3>
+      <p>공공데이터와 머신러닝(XGBoost, LSTM, Prophet) 기반으로 가스 수요를 예측하고, Spring MVC와 FastAPI를 연동하여 예측 결과를 시각화 및 관리하는 대시보드 시스템입니다.</p>
+      <div class="tech">사용 기술: Python(FastAPI, XGBoost, LSTM, Prophet), Java(Spring MVC), MySQL, RESTful API</div>
+      <a href="https://github.com/tmxose/GasMonitoringDashboard.git" target="_blank">깃허브 바로가기</a>
+      <div style="margin-top:12px;">
+        <img src="project4_sample.png" alt="가스 대시보드 스크린샷" style="width:100%; max-width:400px; border-radius:8px;" onerror="this.style.display='none'">
+      </div>
+    </div>
   </section>
 
   <!-- 기술 및 자격증 섹션 -->
   <section id="skills">
     <h2>기술 스택</h2>
     <ul>
-      <li>C# / WinForm / ASP.NET</li>
+      <li>C# / WinForm / ASP.NET / Python / Java / Spring MVC </li>
       <li>SQL (SQLD 자격증 기반 쿼리 능력)</li>
       <li>Git, GitHub 사용 경험</li>
       <li>Visual Studio, Postman 등 기타 툴</li>
@@ -80,8 +119,8 @@
     <h2>Contact</h2>
     <ul>
       <li>이름: 신혁주</li>
-      <li>이메일: <a href="mailto:shj970701@gmail.com">shj970701@gmail.com</a></li>
-      <li>깃허브: <a href="https://github.com/shj970701" target="_blank">https://github.com/shj970701</a></li>
+      <li>이메일: <a href="tmxose@naver.com">tmxose@naver.com</a></li>
+      <li>깃허브: <a href="https://github.com/tmxose" target="_blank">https://github.com/tmxose</a></li>
     </ul>
     <!-- 이력서 PDF 파일을 추가해야 합니다. -->
     <button class="button" onclick="downloadResume()">이력서 다운로드</button>
@@ -90,5 +129,14 @@
 
   <!-- 스크립트 연결 -->
   <script src="script.js"></script>
+  <!-- SwiperJS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+  </script>
 </body>
 </html> 
