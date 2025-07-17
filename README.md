@@ -26,9 +26,5 @@ portfolio/
 2. resume.pdf, profile.jpg 파일을 직접 추가합니다.
 3. index.html을 브라우저에서 열어 확인합니다.
 
-## 배포 방법
-- GitHub Pages를 통해 정적 사이트로 배포할 수 있습니다.
-- 배포 전 resume.pdf, profile.jpg 파일이 포함되어 있는지 확인하세요.
-
 ## 라이선스
 - 본 프로젝트는 자유롭게 수정 및 배포 가능합니다. 
